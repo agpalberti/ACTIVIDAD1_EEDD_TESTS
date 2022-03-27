@@ -9,7 +9,7 @@ class NumerosTests {
 
     @Test
     @Order(4)
-    fun SumaMayor50 (){
+    internal fun SumaMayor50 (){
         println("${Calendar.getInstance().time}: Comienzo test")
         assertTrue(numeros.suma() > 50, "No suman más de 50")
         println("${Calendar.getInstance().time}: Finaliza test")
@@ -17,7 +17,7 @@ class NumerosTests {
 
     @Test
     @Order(2)
-    fun Contiene10(){
+    internal fun Contiene10(){
         println("${Calendar.getInstance().time}: Comienzo test")
         assertContains(numeros.arrayNumeros,10,"No hay ningún 10")
         println("${Calendar.getInstance().time}: Finaliza test")
@@ -25,7 +25,7 @@ class NumerosTests {
 
     @Test
     @Order(3)
-    fun SumaNotNull(){
+    internal fun SumaNotNull(){
         println("${Calendar.getInstance().time}: Comienzo test")
         assertTrue(numeros.suma() != null, "La suma es null" )
         println("${Calendar.getInstance().time}: Finaliza test")
@@ -33,7 +33,7 @@ class NumerosTests {
 
     @Test
     @Order(1)
-    fun MenorNot5(){
+    internal fun MenorNot5(){
         println("${Calendar.getInstance().time}: Comienzo test")
         assertNotEquals(numeros.menor(),5,"La suma es 5")
         println("${Calendar.getInstance().time}: Finaliza test")
